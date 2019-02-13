@@ -10,8 +10,12 @@ router.get('/taxi', function(req, res) {
 
 // add a new taxi to database
 router.post('/taxi', function(req, res) {
+    console.log(req.body);
+    
     res.send({
-        type: 'POST'
+        type: 'POST',
+        hero: req.body.hero,
+        name: req.body.name
     });
 });
 
@@ -31,4 +35,5 @@ router.delete('/taxi/:id', function(req, res) {
 });
 
 
+// export to index.js
 module.exports = router;

@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/abdellahahmed/rest-api-node-express-mongodb#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.11"
   },
   "devDependencies": {
     "nodemon": "^1.18.10"
